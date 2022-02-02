@@ -87,6 +87,20 @@ var exampleMath = 6 % 2; // 0
 var exampleMath7 = 2 ** 2;
 
 
+// fast modify
+var exampleMath8 = 4;
+exampleMath8 += 5;
+exampleMath8 -= 3;// exampleMath8 = exampleMath8 - 3;
+
+
+
+// increment / decrement
+var exampleMath9 = 0;
+exampleMath9++;
+exampleMath9--;
+++exampleMath;
+--exampleMath;
+
 
 
 
