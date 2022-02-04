@@ -172,14 +172,44 @@
 //     document.write(index);
 // }
 
-var exampleFor = "blssed-cursd";
-for (var index = 10; index >= 3; index--) {
-    document.write(exampleFor [index] + " ");
+// var exampleFor = "blssed-cursd";
+// for (var index = 10; index >= 3; index--) {
+//     document.write(exampleFor [index] + " ");
+// }
+
+// // Functions
+// function saHello(name, timeOfDay);
+
+// var exampleVar = "";
+// let exampleLet = "";
+// const EXAMPLE_CONST = ""; // const never change
+
+var vasya = {
+    name: "Liya",
+    lastName: "Petrovsky",
+    age: 20,
+    hobbies: {
+        art: "drawning, singing",
+        display: function() {
+             document.write(`I love ${this.art}.`);
+        }
+    },
+  greet: function() {  //  method
+        document.write(`Hello, my name is ${this.name}! I'm ${this.age} years old. :) `);
+
+    }
 }
 
-// Functions
-function saHello(name, timeOfDay);
+vasya.greet();
 
+vasya.hobbies.display()
+// document.write(vasya.age)
+// document.write(vasya.lastName)
+// document.write(vasya.hobbies.art)
+// 1. Call 'greet' methid multiple times
+// 2. Include age in the greeting.
+// 3. Try changing name and age.
+// 4. Create methid 'bye'.
 
 
 
