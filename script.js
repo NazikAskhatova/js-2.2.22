@@ -184,32 +184,92 @@
 // let exampleLet = "";
 // const EXAMPLE_CONST = ""; // const never change
 
-var vasya = {
-    name: "Liya",
-    lastName: "Petrovsky",
-    age: 20,
-    hobbies: {
-        art: "drawning, singing",
-        display: function() {
-             document.write(`I love ${this.art}.`);
-        }
-    },
-  greet: function() {  //  method
-        document.write(`Hello, my name is ${this.name}! I'm ${this.age} years old. :) `);
+// var vasya = {
+//     name: "Liya",
+//     lastName: "Petrovsky",
+//     age: 20,
+//     hobbies: {
+//         art: "drawning, singing",
+//         display: function() {
+//              document.write(`I love ${this.art}.`);
+//         }
+//     },
+//     // bye: {
+//     //     sayBye: "That's all for today ${this.bye}."
+//     // }
+//   greet: function() {  //  method
+//         document.write(`Hello, my name is ${this.name}! I'm ${this.age} years old. :) `);
 
-    }
-}
+//     }
+// }
 
-vasya.greet();
+// vasya.greet();
 
-vasya.hobbies.display()
+// vasya.hobbies.display()
 // document.write(vasya.age)
 // document.write(vasya.lastName)
 // document.write(vasya.hobbies.art)
 // 1. Call 'greet' methid multiple times
 // 2. Include age in the greeting.
 // 3. Try changing name and age.
-// 4. Create methid 'bye'.
+// 4. Create method 'bye'.
+
+// document.body.style.backround = "red";
+// document.body.textContent = "hello world";
+
+
+
+// getElementBYId
+// let helloWorldDiv = document.getElementById("hello-world");
+
+// helloWorldDiv.textContent = "Nice to meet you."
+// helloWorldDiv.style.background = "blue";
+// helloWorldDiv.style.color = "white";
+// helloWorldDiv.style.textDecoration = "underline";
+// helloWorldDiv.style.fontSize = "20px";
+
+// let allParagraphs = document.getElementsByTagName("p");
+
+// // console.log(allParagraphs);
+// // getElementsByTagName
+// for (let paragraph of allParagraphs) {
+//     paragraph.style.backgroundColor = "blue";
+//     paragraph.style.fontWeight ="bold";
+//     paragraph.style.color = "pink";
+// }
+
+// getElementsByClassName
+let classNames = document.getElementsByClassName("hello-world");
+
+for (let helloWorld of classNames) {
+helloWorld.style.background = "yellow";
+helloWorld.style.fontStyle = "italic";
+}
+
+// querySelector 
+let helloWorld2 = document.querySelector("#hello-world");
+helloWorld2.style.backgroundColor = "purple";
+
+let helloWorlds2 = document.querySelectorAll(".hello-world"); 
+
+for (let helloWorld of helloWorlds2 ) {
+helloWorld.style.fontSize = "10px";
+}
+    
+document.querySelector('p:first-of-type').textContent = "HELLO";
+document.querySelector('p:last-of-type').style.background = "grey";
+// 
+
+var button1 = document.querySelector('button:nth-of-type(1)');
+var button2 = document.querySelector('button:nth-of-type(2)');
+var button3 = document.querySelector('button:nth-of-type(3)');
+var allP = document.querySelectorAll('p');
+
+
+
+
+
+
 
 
 
