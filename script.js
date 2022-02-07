@@ -239,50 +239,118 @@
 // }
 
 // getElementsByClassName
-let classNames = document.getElementsByClassName("hello-world");
+// let classNames = document.getElementsByClassName("hello-world");
 
-for (let helloWorld of classNames) {
-helloWorld.style.background = "yellow";
-helloWorld.style.fontStyle = "italic";
-}
+// for (let helloWorld of classNames) {
+// helloWorld.style.background = "yellow";
+// helloWorld.style.fontStyle = "italic";
+// }
 
-// querySelector 
-let helloWorld2 = document.querySelector("#hello-world");
-helloWorld2.style.backgroundColor = "purple";
+// // querySelector 
+// let helloWorld2 = document.querySelector("#hello-world");
+// helloWorld2.style.backgroundColor = "purple";
 
-let helloWorlds2 = document.querySelectorAll(".hello-world"); 
+// let helloWorlds2 = document.querySelectorAll(".hello-world"); 
 
-for (let helloWorld of helloWorlds2 ) {
-helloWorld.style.fontSize = "10px";
-}
+// for (let helloWorld of helloWorlds2 ) {
+// helloWorld.style.fontSize = "10px";
+// }
     
-document.querySelector('p:first-of-type').textContent = "HELLO";
-document.querySelector('p:last-of-type').style.background = "grey";
+// document.querySelector('p:first-of-type').textContent = "HELLO";
+// document.querySelector('p:last-of-type').style.background = "grey";
+// // 
+
+// var button1 = document.querySelector('button:nth-of-type(1)');
+// var button2 = document.querySelector('button:nth-of-type(2)');
+// var button3 = document.querySelector('button:nth-of-type(3)');
+// var allP = document.querySelectorAll('p');
+
 // 
+// 7.2.22 - JavaScript
 
-var button1 = document.querySelector('button:nth-of-type(1)');
-var button2 = document.querySelector('button:nth-of-type(2)');
-var button3 = document.querySelector('button:nth-of-type(3)');
-var allP = document.querySelectorAll('p');
+// модифицирование
+
+//  method 1
+
+// // create
+// document.body.innerHTML = "<h1>Hello World</h1>";
+// // find
+// let h1Element = document.querySelector('h1');
+// // modify
+// h1Element.style.color = "rgb(255, 0 , 0)";
+
+// // method 2
+
+// // create
+// let h2Element = document.createElement('h2');
+
+// // attach
+// document.body.prepend(h2Element);
+
+// // modify
+// h2Element.textContent = "Nice to meet you <3";
+let exercisesElement = document.querySelector('#exercises');
+// append - insert element before closing tag
+// prepend - insert after closing tag
+// before - insert el before opening tag
+// after - insert el after closing tag
+// create
+// let h1Element = document.createElement('h1');
+
+// // modify
+// h1Element.textContent = "H1 header"; 
+// h1Element.style.color = "rgb(100, 200, 10)"
+// // attach
+// exercisesElement.append(h1Element);
+
+// let h2Element = document.createElement('h2');
+// h2Element.textContent = "H2 header";
+// exercisesElement.append(h2Element);
+// h2Element.style.color = "rgb(100, 190, 10)"
+
+// let h3Element = document.createElement('h3'); // create
+//  exercisesElement.append(h3Element);// attach
+// h3Element.textContent = "H3 header"; // modify
+// h3Element.style.color = "rgb(50, 100, 10)"
+
+// let h4Element = document.createElement('h4');
+// exercisesElement.prepend(h4Element);
+// h4Element.textContent = "H4 header";
+// h4Element.style.color = "rgb(20, 60, 10)"
+
+// let h5Element = document.createElement('h5');
+// exercisesElement.before(h5Element);
+// h5Element.textContent = "H5 header";
+// h5Element.style.color = "rgb(10, 20, 10)"
+
+
+// let h6Element = document.createElement('h6');
+// exercisesElement.after(h6Element);
+// h6Element.textContent = "H6 header";
+// h6Element.style.color = "rgb(100, 20, 10)"
+
+
+// // Exercise
+// let exercise1 = document.querySelector('#exercise1');
+// exercise1.before('before');
+// exercise1.prepend('prepend');
+// exercise1.attend('attend');
+// exercise1.after('after');
+// // exercise1.replaceWith('replaced');
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let buttonElement = document.createElement('button');
+exercisesElement.prepend(buttonElement);
+buttonElement.textContent = "Launch Meeting";
+buttonElement.style.background = "blue";
+buttonElement.style.padding = "15px 20px";
+buttonElement.style.fontFamily = "Sans-Serif";
+buttonElement.style.borderRadius = "10px";
+buttonElement.style.color = "white";
+buttonElement.style.border = "none";
+buttonElement.style.margin = "";
 
 
 
